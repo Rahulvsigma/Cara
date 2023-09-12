@@ -1,0 +1,245 @@
+'''   #PROGRAM-1 
+a=10
+print("Value of a:-",a)
+print(type(a))
+
+
+b=3.14
+print("Value of b:-",b)
+print(type(b))
+
+c=2+0j
+print("Value of c:-",c)
+print(type(c))
+
+k=True
+print("Value of k:-",k)
+print(type(k))   '''
+
+
+''' #PROGRAM-2
+a=30
+b=20
+print("Addition:-",a+b)
+print("Subtraction:-",a-b)
+print("Multiplication:-",a*b)
+print("Division:-",a/b)
+print("Modulo:-",a%b)
+print("Exponent-",a**b)
+'''
+
+'''
+
+#Program-3
+#Creating a string
+str1="Hello"
+str2="World"
+str3="!"
+
+#Concatenate
+
+result_str=str1+" "+str2+str3
+print(result_str)
+
+#accessing substring
+
+print("Sub string:-",result_str[6:11])
+
+'''
+
+
+#Program-4
+'''
+a=10
+b=20
+c=30
+if (a>=b) and (a>=c):
+   largest=a
+elif (b>=a) and (b>=c):
+   largest=b
+else:
+    largest=c
+print("largest:-",largest)
+
+'''
+
+'''
+#Program-5
+
+#creating the list
+list=["Apple","Mango","Orange","Pineapple"]
+print("list:-",list)
+list.append("Blueberry")
+print("List after append:-",list)
+
+list.remove("Orange")
+print("List after removal:-",list)
+
+'''
+
+
+'''
+#Program 6
+
+#Accessing the tuple
+tup=(1,2,3,4,5)
+print(tup[0])
+print(tup[-1])
+
+#count
+print("Count:-",tup.count(4))
+
+#length
+print("Length:-",len(tup))
+
+
+#index
+print("Index:-",tup.index(4))
+
+#Concatenation tuples
+tup1=(6,7,8,9,10)
+print("After concat:-",tup+tup1)
+
+'''
+
+'''
+#program-7
+#create a dictionary
+dict={
+"rahul":9.2,
+"rashmitha":9.0,
+"varun":8.7,
+"sarika":8.8
+}
+print(dict)
+
+#add a new key-value pair to the dictionary
+dict["sarika"]=8.8
+print(dict)
+
+#delete
+del dict["sarika"]
+print(dict)
+
+#sets
+s={1,2,3,4,5}
+print(s)
+
+#add
+s.add(6)
+print(s)
+
+#remove
+s.remove(6)
+print(s)
+'''
+
+
+'''
+#Program-8
+
+#Pattern-1
+
+n=5
+for i in range(n):
+    for j in range(n):
+        print("*", end="")
+    print()
+
+
+#Pattern-2
+
+n=5
+for i in range(n):
+    for j in range(i+1):
+        print("*", end="")
+    print()
+
+#Pattern-3
+    n=5
+for i in range(n):
+    for j in range(n-i):
+        print("*", end="")
+    print()
+
+
+#Pattern-4
+#program-9
+
+for i in range(n):
+    for j in range(i):
+        print(" ", end="")
+
+    for j in range(n-i):
+        print("*", end="")
+    print()     '''
+
+'''
+n=5
+for i in range(n):
+    for j in range(n-i):
+        print("*", end="")
+    print()
+'''
+  
+
+'''
+#program-10
+
+n=20
+for num in range(2,n):
+    for i in range(2,num):
+        if (num%i)==0:
+           break
+    else:
+        print(num)
+        '''
+'''
+Program-11
+def fib(n):
+    a,b=0,1
+    fib_seq=[]
+    while b<=n:
+        fib_seq.append(b)
+        a,b=b,a+b
+        return fib_seq
+
+
+from fibonacci import fib
+fib_seq=fib(100)
+print(fib_seq) 
+'''
+
+'''
+#Program-12
+
+import numpy as np 
+
+#Creating an array
+k=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(k)
+
+#Type of array
+print(type(k))
+
+#Axis of array
+print(np.sum(k,axis=0))
+print(np.sum(k,axis=1))
+
+#Axis of array
+print(k.shape)
+
+'''
+
+#Program-13
+import pandas as pd 
+
+dict={
+"rahul":9.2,
+"rashmitha":9.0,
+"varun":8.7,
+"sarika":8.8
+}
+
+df=pd.DataFrame(dict)
+print(df)
